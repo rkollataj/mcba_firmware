@@ -1,0 +1,45 @@
+[Header]
+MagicCookie={0b13fe8c-dfe0-40eb-8900-6712719559a7}
+Version=1.0
+[File000]
+Location=X:\SPI Modes0-1.o
+Folder=Intermediary
+DeviceName=PIC18F4680
+LanguageToolSuiteID={5B7D72DD-9861-47BD-9F60-2BE967BF8416}
+LanguageToolID={E56A1C86-9D32-4DF6-8C34-FE0388B1B644}
+LanguageToolLocation=C:\MCC18\3_20\bin\mcc18.exe
+PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)||$(INCDIR)||$(LIBDIR)|C:\MCC18\lib||$(LKRDIR)||
+SOLK=<src>|SPI Modes0-1.c|mainMaster.c|I2C_Master.c||<obj>||<lib>||<lkr>|18f2680.lkr||
+SuiteArgsString=
+ToolArgsString=-Ou- -Ot- -Ob- -Op- -Or- -Od- -Opa-
+TraceCmdString=
+DebugOptions=
+[File001]
+Location=X:\mainMaster.o
+Folder=Intermediary
+DeviceName=PIC18F4680
+LanguageToolSuiteID={5B7D72DD-9861-47BD-9F60-2BE967BF8416}
+LanguageToolID={E56A1C86-9D32-4DF6-8C34-FE0388B1B644}
+LanguageToolLocation=C:\MCC18\3_20\bin\mcc18.exe
+PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)||$(INCDIR)||$(LIBDIR)|C:\MCC18\lib||$(LKRDIR)||
+SOLK=<src>|SPI Modes0-1.c|mainMaster.c|I2C_Master.c||<obj>||<lib>||<lkr>|18f2680.lkr||
+SuiteArgsString=
+ToolArgsString=-Ou- -Ot- -Ob- -Op- -Or- -Od- -Opa-
+TraceCmdString=
+DebugOptions=
+[File002]
+Location=X:\I2C_Master.o
+Folder=Intermediary
+DeviceName=PIC18F4680
+LanguageToolSuiteID={5B7D72DD-9861-47BD-9F60-2BE967BF8416}
+LanguageToolID={E56A1C86-9D32-4DF6-8C34-FE0388B1B644}
+LanguageToolLocation=C:\MCC18\3_20\bin\mcc18.exe
+PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)||$(INCDIR)||$(LIBDIR)|C:\MCC18\lib||$(LKRDIR)||
+SOLK=<src>|SPI Modes0-1.c|mainMaster.c|I2C_Master.c||<obj>||<lib>||<lkr>|18f2680.lkr||
+SuiteArgsString=
+ToolArgsString=-Ou- -Ot- -Ob- -Op- -Or- -Od- -Opa-
+TraceCmdString=
+DebugOptions=
+[TOOL_LOC_STAMPS]
+tool_loc{96C98149-AA1B-4CF9-B967-FAE79CAB663C}=C:\MCC18\3_20\bin\mplink.exe
+tool_loc{E56A1C86-9D32-4DF6-8C34-FE0388B1B644}=C:\MCC18\3_20\bin\mcc18.exe
