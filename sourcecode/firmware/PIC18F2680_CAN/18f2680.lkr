@@ -5,7 +5,7 @@ LIBPATH .
 
 FILES c018i.o
 FILES clib.lib
-FILES p18f2680.lib
+FILES p18F2680.lib
 
 CODEPAGE   NAME=page       START=0x0               END=0xFFFF
 CODEPAGE   NAME=idlocs     START=0x200000          END=0x200007       PROTECTED

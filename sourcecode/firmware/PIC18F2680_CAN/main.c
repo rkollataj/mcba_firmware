@@ -2,7 +2,7 @@
 #include "spi.h"
 #include "queue.h"
 #include "CAN_to_SPI.h"
-
+#include "config_bits.h"
 
 
 

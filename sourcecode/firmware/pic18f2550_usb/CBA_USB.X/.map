@@ -1,0 +1,1011 @@
+MPLINK 4.40, Linker
+Linker Map File - Created Thu Oct 13 13:54:16 2016
+
+                                 Section Info
+                  Section       Type    Address   Location Size(Bytes)
+                ---------  ---------  ---------  ---------  ---------
+               _entry_scn       code   0x000000    program   0x000006
+    HIGH_INTERRUPT_VECTOR       code   0x000008    program   0x000006
+     LOW_INTERRUPT_VECTOR       code   0x000018    program   0x000006
+    REMAPPED_RESET_VECTOR       code   0x001000    program   0x000006
+REMAPPED_HIGH_INTERRUPT_VECTOR       code   0x001008    program   0x000006
+REMAPPED_LOW_INTERRUPT_VECTOR       code   0x001018    program   0x000006
+                   .cinit    romdata   0x00102a    program   0x00001a
+       .code_usb_device.o       code   0x001044    program   0x001150
+             .code_main.o       code   0x002194    program   0x000820
+            .code_queue.o       code   0x0029b4    program   0x00039e
+.romdata_usb_descriptors.o    romdata   0x002d52    program   0x0000b4
+               _cinit_scn       code   0x002e06    program   0x00009e
+                   STRING       code   0x002ea4    program   0x00008a
+         .code_spi_open.o       code   0x002f2e    program   0x000058
+         .code_spi_writ.o       code   0x002f86    program   0x000024
+                    .code       code   0x002faa    program   0x000020
+             _startup_scn       code   0x002fca    program   0x00001c
+         .code_spi_read.o       code   0x002fe6    program   0x00000a
+           .code___init.o       code   0x002ff0    program   0x000002
+    USB_CAN_IDATA_VARS1_i    romdata   0x002ff2    program   0x000005
+      .idata_spi_writ.o_i    romdata   0x002ff7    program   0x000000
+      .romdata_spi_read.o    romdata   0x002ff7    program   0x000000
+      .idata_spi_read.o_i    romdata   0x002ff7    program   0x000000
+      .romdata_spi_writ.o    romdata   0x002ff7    program   0x000000
+      .romdata_spi_open.o    romdata   0x002ff7    program   0x000000
+      .idata_spi_open.o_i    romdata   0x002ff7    program   0x000000
+         .romdata_queue.o    romdata   0x002ff7    program   0x000000
+         .idata_queue.o_i    romdata   0x002ff7    program   0x000000
+.romdata_usb_function_generic.o    romdata   0x002ff7    program   0x000000
+        .romdata___init.o    romdata   0x002ff7    program   0x000000
+.idata_usb_function_generic.o_i    romdata   0x002ff7    program   0x000000
+    .romdata_usb_device.o    romdata   0x002ff7    program   0x000000
+    .idata_usb_device.o_i    romdata   0x002ff7    program   0x000000
+.idata_usb_descriptors.o_i    romdata   0x002ff7    program   0x000000
+         .romdata_c018i.o    romdata   0x002ff7    program   0x000000
+          .idata_main.o_i    romdata   0x002ff7    program   0x000002
+          .romdata_main.o    romdata   0x002ff7    program   0x000000
+         .idata_c018i.o_i    romdata   0x002ff9    program   0x000000
+        .idata___init.o_i    romdata   0x002ff9    program   0x000000
+            .code_c018i.o       code   0x002ffa    program   0x000000
+.code_usb_function_generic.o       code   0x002ffa    program   0x000000
+  .code_usb_descriptors.o       code   0x002ffa    program   0x000000
+    .config_300000_main.o    romdata   0x300000    program   0x000001
+    .config_300001_main.o    romdata   0x300001    program   0x000001
+    .config_300002_main.o    romdata   0x300002    program   0x000001
+    .config_300003_main.o    romdata   0x300003    program   0x000001
+    .config_300005_main.o    romdata   0x300005    program   0x000001
+    .config_300006_main.o    romdata   0x300006    program   0x000001
+    .config_300008_main.o    romdata   0x300008    program   0x000001
+    .config_300009_main.o    romdata   0x300009    program   0x000001
+    .config_30000a_main.o    romdata   0x30000a    program   0x000001
+    .config_30000b_main.o    romdata   0x30000b    program   0x000001
+    .config_30000c_main.o    romdata   0x30000c    program   0x000001
+    .config_30000d_main.o    romdata   0x30000d    program   0x000001
+                MATH_DATA      udata   0x000000       data   0x00000b
+                 .tmpdata      udata   0x00000b       data   0x000004
+      .udata_usb_device.o      udata   0x000060       data   0x00002e
+          SOME_VAR_LABEL2      udata   0x00008e       data   0x00001b
+           .udata_c018i.o      udata   0x0000a9       data   0x00000a
+          USB_CAN_ONE_VAR      udata   0x0000b3       data   0x000004
+          .udata___init.o      udata   0x0000b7       data   0x000000
+        .idata_spi_writ.o      idata   0x0000b7       data   0x000000
+        .udata_spi_writ.o      udata   0x0000b7       data   0x000000
+        .idata_spi_read.o      idata   0x0000b7       data   0x000000
+        .udata_spi_read.o      udata   0x0000b7       data   0x000000
+          .idata___init.o      idata   0x0000b7       data   0x000000
+        .idata_spi_open.o      idata   0x0000b7       data   0x000000
+        .udata_spi_open.o      udata   0x0000b7       data   0x000000
+           .idata_queue.o      idata   0x0000b7       data   0x000000
+           .udata_queue.o      udata   0x0000b7       data   0x000000
+.idata_usb_function_generic.o      idata   0x0000b7       data   0x000000
+.udata_usb_function_generic.o      udata   0x0000b7       data   0x000000
+      .idata_usb_device.o      idata   0x0000b7       data   0x000000
+ .idata_usb_descriptors.o      idata   0x0000b7       data   0x000000
+ .udata_usb_descriptors.o      udata   0x0000b7       data   0x000000
+           .idata_c018i.o      idata   0x0000b7       data   0x000000
+                   .stack      udata   0x000300       data   0x000100
+                  USB_BDT      udata   0x000400       data   0x000024
+            USB_VARIABLES      udata   0x000500       data   0x000080
+        USB_BUFFER_REGION      udata   0x000580       data   0x00011d
+          USB_CAN_TWO_VAR      udata   0x00069d       data   0x000051
+          SOME_VAR_LABEL1      udata   0x0006ee       data   0x00000a
+      USB_CAN_IDATA_VARS1      idata   0x0006f8       data   0x000005
+            .idata_main.o      idata   0x0006fd       data   0x000002
+            .udata_main.o      udata   0x0006ff       data   0x000001
+            SFR_UNBANKED0      udata   0x000f66       data   0x00009a
+
+
+
+                              Program Memory Usage 
+                               Start         End      
+                           ---------   ---------      
+                            0x000000    0x000005      
+                            0x000008    0x00000d      
+                            0x000018    0x00001d      
+                            0x001000    0x001005      
+                            0x001008    0x00100d      
+                            0x001018    0x00101d      
+                            0x00102a    0x002ff8      
+                            0x300000    0x300003      
+                            0x300005    0x300006      
+                            0x300008    0x30000d      
+            8191 out of 33048 program addresses used, program memory utilization is 24%
+
+
+
+                              Symbols - Sorted by Name
+                     Name    Address   Location    Storage File                     
+                ---------  ---------  ---------  --------- ---------                
+           BlinkUSBStatus   0x002792    program     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/main.c
+                 High_ISR   0x000008    program     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/main.c
+         InitializeSystem   0x002256    program     static /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/main.c
+                  Low_ISR   0x000018    program     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/main.c
+                  OpenSPI   0x002f2e    program     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/spi/spi_open.c
+                ProcessIO   0x0022ea    program     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/main.c
+                  ReadSPI   0x002fe6    program     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/spi/spi_read.c
+        Remapped_High_ISR   0x001008    program     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/main.c
+         Remapped_Low_ISR   0x001018    program     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/main.c
+SendReceiveSPIPacketRealFunction   0x0026a8    program     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/main.c
+       USBCBCheckOtherReq   0x002818    program     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/main.c
+        USBCBErrorHandler   0x002816    program     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/main.c
+              USBCBInitEP   0x00281c    program     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/main.c
+          USBCBSendResume   0x002854    program     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/main.c
+    USBCBStdSetDscHandler   0x00281a    program     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/main.c
+             USBCBSuspend   0x002810    program     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/main.c
+     USBCBWakeFromSuspend   0x002812    program     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/main.c
+        USBCB_SOF_Handler   0x002814    program     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/main.c
+              USBCancelIO   0x002104    program     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/usb_device.c
+       USBCheckStdRequest   0x001546    program     static /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/usb_device.c
+     USBConfigureEndpoint   0x001e1a    program     static /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/usb_device.c
+  USBCtrlEPAllowDataStage   0x0018a2    program     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/usb_device.c
+USBCtrlEPAllowStatusStage   0x001800    program     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/usb_device.c
+         USBCtrlEPService   0x001326    program     static /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/usb_device.c
+ USBCtrlEPServiceComplete   0x001a8c    program     static /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/usb_device.c
+      USBCtrlTrfInHandler   0x00149a    program     static /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/usb_device.c
+     USBCtrlTrfOutHandler   0x001450    program     static /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/usb_device.c
+      USBCtrlTrfRxService   0x001c0c    program     static /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/usb_device.c
+   USBCtrlTrfSetupHandler   0x0013f6    program     static /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/usb_device.c
+      USBCtrlTrfTxService   0x001b4e    program     static /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/usb_device.c
+          USBDeviceAttach   0x002166    program     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/usb_device.c
+          USBDeviceDetach   0x00215c    program     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/usb_device.c
+            USBDeviceInit   0x001044    program     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/usb_device.c
+           USBDeviceTasks   0x00115c    program     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/usb_device.c
+        USBEnableEndpoint   0x001ed8    program     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/usb_device.c
+         USBStallEndpoint   0x001f46    program     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/usb_device.c
+          USBStallHandler   0x00129c    program     static /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/usb_device.c
+  USBStdFeatureReqHandler   0x001604    program     static /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/usb_device.c
+      USBStdGetDscHandler   0x00191e    program     static /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/usb_device.c
+   USBStdGetStatusHandler   0x0019d8    program     static /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/usb_device.c
+      USBStdSetCfgHandler   0x001d4a    program     static /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/usb_device.c
+               USBSuspend   0x0012ce    program     static /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/usb_device.c
+     USBTransferOnePacket   0x002004    program     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/usb_device.c
+       USBWakeFromSuspend   0x0012f8    program     static /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/usb_device.c
+               USB_CD_Ptr   0x002dfc    program     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/usb_descriptors.c
+               USB_SD_Ptr   0x002dfe    program     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/usb_descriptors.c
+USER_USB_CALLBACK_EVENT_HANDLER   0x00289c    program     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/main.c
+                 UserInit   0x00226a    program     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/main.c
+                 WriteSPI   0x002f86    program     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/spi/spi_writ.c
+  YourHighPriorityISRCode   0x002194    program     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/main.c
+   YourLowPriorityISRCode   0x00222a    program     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/main.c
+              _2jContinue   0x002f1a    program     static C:\MCC18\v3_39\src\traditional\stdclib\memset.asm
+                   _3jEnd   0x002f24    program     static C:\MCC18\v3_39\src\traditional\stdclib\memset.asm
+              _4jContinue   0x002ed8    program     static C:\MCC18\v3_39\src\traditional\stdclib\memcpy.asm
+                   _5jEnd   0x002ee2    program     static C:\MCC18\v3_39\src\traditional\stdclib\memcpy.asm
+       ___case_1_lbl00017   0x002c8c    program     static                          
+      ___default_lbl00024   0x002cfe    program     static                          
+         ___else_lbl00021   0x002cb4    program     static                          
+           ___if_lbl00020   0x002cb6    program     static                          
+       ___return_lbl00000   0x001004    program     static                          
+       ___return_lbl00000   0x000004    program     static                          
+       ___return_lbl00001   0x002fe4    program     static                          
+       ___return_lbl00001   0x00100c    program     static                          
+       ___return_lbl00002   0x00101c    program     static                          
+       ___return_lbl00002   0x002ea2    program     static                          
+       ___return_lbl00003   0x00000c    program     static                          
+       ___return_lbl00004   0x00001c    program     static                          
+       ___return_lbl00013   0x002d1a    program     static                          
+       ___return_lbl00153   0x00297e    program     static                          
+       ___return_lbl00156   0x0029aa    program     static                          
+   ___switchexit_lbl00016   0x002d10    program     static                          
+        ___while_lbl00014   0x002c7a    program     static                          
+        ___while_lbl00015   0x002d12    program     static                          
+        ___while_lbl00018   0x002c8e    program     static                          
+        ___while_lbl00019   0x002cde    program     static                          
+        ___while_lbl00022   0x002cb6    program     static                          
+        ___while_lbl00023   0x002cba    program     static                          
+        ___while_lbl00154   0x00296e    program     static                          
+        ___while_lbl00155   0x002972    program     static                          
+               __config_0   0x300000    program     static /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/main.c
+               __config_1   0x300001    program     static /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/main.c
+              __config_10   0x30000c    program     static /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/main.c
+              __config_11   0x30000d    program     static /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/main.c
+               __config_2   0x300002    program     static /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/main.c
+               __config_3   0x300003    program     static /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/main.c
+               __config_4   0x300005    program     static /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/main.c
+               __config_5   0x300006    program     static /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/main.c
+               __config_6   0x300008    program     static /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/main.c
+               __config_7   0x300009    program     static /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/main.c
+               __config_8   0x30000a    program     static /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/main.c
+               __config_9   0x30000b    program     static /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/main.c
+                   __init   0x002ff0    program     extern C:\MCC18\v3_39\src\traditional\stdclib\__init.c
+            __zero_memory   0x002faa    program     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                _do_cinit   0x002e06    program     extern C:\MCC18\v3_39\src\traditional\startup\c018i.c
+                   _entry   0x000000    program     extern C:\MCC18\v3_39\src\traditional\startup\c018i.c
+                   _reset   0x001000    program     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/main.c
+                 _startup   0x002fca    program     extern C:\MCC18\v3_39\src\traditional\startup\c018i.c
+             addMsg2Queue   0x002a62    program     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/queue.c
+                compare_l   0x002fc0    program     static C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+        configDescriptor1   0x002d64    program     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/usb_descriptors.c
+                copy_loop   0x002e78    program     static                          
+            copy_one_byte   0x002e7e    program     static                          
+                    delay   0x002d32    program     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/queue.c
+               device_dsc   0x002d52    program     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/usb_descriptors.c
+                     done   0x002ea2    program     static                          
+             done_copying   0x002e8c    program     static                          
+             initMsgQueue   0x0029b4    program     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/queue.c
+                     jEnd   0x002f2c    program     static C:\MCC18\v3_39\src\traditional\stdclib\memset.asm
+                     jEnd   0x002ee8    program     static C:\MCC18\v3_39\src\traditional\stdclib\memcpy.asm
+                    jLoop   0x002f0e    program     static C:\MCC18\v3_39\src\traditional\stdclib\memset.asm
+                    jLoop   0x002ecc    program     static C:\MCC18\v3_39\src\traditional\stdclib\memcpy.asm
+                     loop   0x002fda    program     static                          
+                   loop_h   0x002fb8    program     static C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                   loop_l   0x002fc2    program     static C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                     main   0x00224c    program     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/main.c
+                   memcpy   0x002ea4    program     extern C:\MCC18\v3_39\src\traditional\stdclib\memcpy.asm
+                   memset   0x002efa    program     extern C:\MCC18\v3_39\src\traditional\stdclib\memset.asm
+               readEEPROM   0x002988    program     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/main.c
+       removeMsgfromQueue   0x002b58    program     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/queue.c
+                    sd000   0x002d84    program     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/usb_descriptors.c
+                    sd001   0x002d88    program     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/usb_descriptors.c
+                    sd002   0x002dbc    program     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/usb_descriptors.c
+                    sd003   0x002df2    program     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/usb_descriptors.c
+ spiTransmitandReceiveMsg   0x002c4e    program     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/queue.c
+                     test   0x002e20    program     static                          
+              writeEEPROM   0x002930    program     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/main.c
+               zero_block   0x002fb8    program     static C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                   ADCON0   0x000fc2       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+               ADCON0bits   0x000fc2       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                   ADCON1   0x000fc1       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+               ADCON1bits   0x000fc1       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                   ADCON2   0x000fc0       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+               ADCON2bits   0x000fc0       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                    ADRES   0x000fc3       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                   ADRESH   0x000fc4       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                   ADRESL   0x000fc3       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                  BAUDCON   0x000fb8       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+              BAUDCONbits   0x000fb8       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                  BAUDCTL   0x000fb8       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+              BAUDCTLbits   0x000fb8       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                      BDT   0x000400       data     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/usb_device.c
+                      BSR   0x000fe0       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+       BothEP0OutUOWNsSet   0x000083       data     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/usb_device.c
+              BytesToXmit   0x0006fa       data     static /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/main.c
+                   CCP1AS   0x000fb6       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+               CCP1ASbits   0x000fb6       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                  CCP1CON   0x000fbd       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+              CCP1CONbits   0x000fbd       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                  CCP1DEL   0x000fb7       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+              CCP1DELbits   0x000fb7       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                  CCP2CON   0x000fba       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+              CCP2CONbits   0x000fba       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                    CCPR1   0x000fbe       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                   CCPR1H   0x000fbf       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                   CCPR1L   0x000fbe       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                    CCPR2   0x000fbb       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                   CCPR2H   0x000fbc       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                   CCPR2L   0x000fbb       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                    CMCON   0x000fb4       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                CMCONbits   0x000fb4       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                   CVRCON   0x000fb5       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+               CVRCONbits   0x000fb5       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+              CtrlTrfData   0x00041c       data     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/usb_device.c
+                     DDRA   0x000f92       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                 DDRAbits   0x000f92       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                     DDRB   0x000f93       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                 DDRBbits   0x000f93       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                     DDRC   0x000f94       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                 DDRCbits   0x000f94       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                 DummyVar   0x0006ff       data     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/main.c
+            DummyVariable   0x0006eb       data     static /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/main.c
+            DummyVariable   0x0006e3       data     static /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/main.c
+                  ECCP1AS   0x000fb6       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+              ECCP1ASbits   0x000fb6       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                 ECCP1DEL   0x000fb7       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+             ECCP1DELbits   0x000fb7       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                    EEADR   0x000fa9       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                   EECON1   0x000fa6       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+               EECON1bits   0x000fa6       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                   EECON2   0x000fa7       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                   EEDATA   0x000fa8       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                     FSR0   0x000fe9       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                    FSR0H   0x000fea       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                    FSR0L   0x000fe9       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                     FSR1   0x000fe1       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                    FSR1H   0x000fe2       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                    FSR1L   0x000fe1       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                 FSR1Save   0x0006e4       data     static /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/main.c
+                     FSR2   0x000fd9       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                    FSR2H   0x000fda       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                    FSR2L   0x000fd9       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                 FSR2Save   0x0006e6       data     static /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/main.c
+                  HLVDCON   0x000fd2       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+              HLVDCONbits   0x000fd2       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                    INDF0   0x000fef       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                    INDF1   0x000fe7       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                    INDF2   0x000fdf       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                 INPacket   0x000540       data     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/main.c
+                   INTCON   0x000ff2       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                  INTCON2   0x000ff1       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+              INTCON2bits   0x000ff1       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                  INTCON3   0x000ff0       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+              INTCON3bits   0x000ff0       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+               INTCONbits   0x000ff2       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                     IPR1   0x000f9f       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                 IPR1bits   0x000f9f       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                     IPR2   0x000fa2       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                 IPR2bits   0x000fa2       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                     LATA   0x000f89       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                 LATAbits   0x000f89       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                     LATB   0x000f8a       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                 LATBbits   0x000f8a       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                     LATC   0x000f8b       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                 LATCbits   0x000f8b       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                   LVDCON   0x000fd2       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+               LVDCONbits   0x000fd2       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+              NumMessages   0x0006f9       data     static /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/main.c
+                   OSCCON   0x000fd3       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+               OSCCONbits   0x000fd3       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                  OSCTUNE   0x000f9b       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+              OSCTUNEbits   0x000f9b       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                OUTPacket   0x000500       data     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/main.c
+                       PC   0x000ff9       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                      PCL   0x000ff9       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                   PCLATH   0x000ffa       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                   PCLATU   0x000ffb       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                     PIE1   0x000f9d       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                 PIE1bits   0x000f9d       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                     PIE2   0x000fa0       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                 PIE2bits   0x000fa0       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                     PIR1   0x000f9e       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                 PIR1bits   0x000f9e       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                     PIR2   0x000fa1       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                 PIR2bits   0x000fa1       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                   PLUSW0   0x000feb       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                   PLUSW1   0x000fe3       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                   PLUSW2   0x000fdb       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                    PORTA   0x000f80       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                PORTAbits   0x000f80       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                    PORTB   0x000f81       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                PORTBbits   0x000f81       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                    PORTC   0x000f82       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                PORTCbits   0x000f82       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                    PORTE   0x000f84       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                PORTEbits   0x000f84       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                 POSTDEC0   0x000fed       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                 POSTDEC1   0x000fe5       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                 POSTDEC2   0x000fdd       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                 POSTINC0   0x000fee       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                 POSTINC1   0x000fe6       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                 POSTINC2   0x000fde       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                      PR2   0x000fcb       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                  PREINC0   0x000fec       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                  PREINC1   0x000fe4       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                  PREINC2   0x000fdc       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                     PROD   0x000ff3       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                    PRODH   0x000ff4       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                    PRODL   0x000ff3       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                PRODLSave   0x0006e8       data     static /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/main.c
+                     RCON   0x000fd0       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                 RCONbits   0x000fd0       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                    RCREG   0x000fae       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                    RCSTA   0x000fab       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                RCSTAbits   0x000fab       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+             RemoteWakeup   0x00007f       data     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/usb_device.c
+                     SIGN   0x000009       data     extern C:\MCC18\v3_39\src\traditional\math\cmath18.asm
+                    SPBRG   0x000faf       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                   SPBRGH   0x000fb0       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                   SSPADD   0x000fc8       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                   SSPBUF   0x000fc9       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                  SSPCON1   0x000fc6       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+              SSPCON1bits   0x000fc6       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                  SSPCON2   0x000fc5       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+              SSPCON2bits   0x000fc5       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                  SSPSTAT   0x000fc7       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+              SSPSTATbits   0x000fc7       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                   STATUS   0x000fd8       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+               STATUSbits   0x000fd8       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                   STKPTR   0x000ffc       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+               STKPTRbits   0x000ffc       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                 SetupPkt   0x000414       data     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/usb_device.c
+                    T0CON   0x000fd5       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                T0CONbits   0x000fd5       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                    T1CON   0x000fcd       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                T1CONbits   0x000fcd       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                    T2CON   0x000fca       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                T2CONbits   0x000fca       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                    T3CON   0x000fb1       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                T3CONbits   0x000fb1       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                   TABLAT   0x000ff5       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                   TBLPTR   0x000ff6       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                  TBLPTRH   0x000ff7       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                  TBLPTRL   0x000ff6       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                  TBLPTRU   0x000ff8       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                    TMR0H   0x000fd7       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                    TMR0L   0x000fd6       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                    TMR1H   0x000fcf       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                    TMR1L   0x000fce       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                     TMR2   0x000fcc       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                    TMR3H   0x000fb3       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                    TMR3L   0x000fb2       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                      TOS   0x000ffd       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                     TOSH   0x000ffe       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                     TOSL   0x000ffd       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                     TOSU   0x000fff       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                    TRISA   0x000f92       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                TRISAbits   0x000f92       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                    TRISB   0x000f93       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                TRISBbits   0x000f93       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                    TRISC   0x000f94       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                TRISCbits   0x000f94       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                    TXREG   0x000fad       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                    TXSTA   0x000fac       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                TXSTAbits   0x000fac       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                    UADDR   0x000f6e       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                UADDRbits   0x000f6e       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                     UCFG   0x000f6f       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                 UCFGbits   0x000f6f       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                     UCON   0x000f6d       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                 UCONbits   0x000f6d       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                     UEIE   0x000f6b       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                 UEIEbits   0x000f6b       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                     UEIR   0x000f6a       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                 UEIRbits   0x000f6a       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                     UEP0   0x000f70       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                 UEP0bits   0x000f70       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                     UEP1   0x000f71       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                    UEP10   0x000f7a       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                UEP10bits   0x000f7a       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                    UEP11   0x000f7b       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                UEP11bits   0x000f7b       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                    UEP12   0x000f7c       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                UEP12bits   0x000f7c       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                    UEP13   0x000f7d       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                UEP13bits   0x000f7d       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                    UEP14   0x000f7e       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                UEP14bits   0x000f7e       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                    UEP15   0x000f7f       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                UEP15bits   0x000f7f       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                 UEP1bits   0x000f71       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                     UEP2   0x000f72       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                 UEP2bits   0x000f72       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                     UEP3   0x000f73       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                 UEP3bits   0x000f73       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                     UEP4   0x000f74       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                 UEP4bits   0x000f74       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                     UEP5   0x000f75       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                 UEP5bits   0x000f75       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                     UEP6   0x000f76       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                 UEP6bits   0x000f76       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                     UEP7   0x000f77       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                 UEP7bits   0x000f77       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                     UEP8   0x000f78       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                 UEP8bits   0x000f78       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                     UEP9   0x000f79       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                 UEP9bits   0x000f79       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                     UFRM   0x000f66       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                    UFRMH   0x000f67       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                UFRMHbits   0x000f67       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                    UFRML   0x000f66       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                UFRMLbits   0x000f66       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                      UIE   0x000f69       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                  UIEbits   0x000f69       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                      UIR   0x000f68       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                  UIRbits   0x000f68       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+   USBActiveConfiguration   0x000061       data     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/usb_device.c
+    USBAlternateInterface   0x000062       data     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/usb_device.c
+        USBBusIsSuspended   0x000080       data     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/usb_device.c
+USBDeferINDataStagePackets   0x00008c       data     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/usb_device.c
+USBDeferOUTDataStagePackets   0x00008d       data     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/usb_device.c
+USBDeferStatusStagePacket   0x000089       data     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/usb_device.c
+           USBDeviceState   0x000060       data     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/usb_device.c
+       USBGenericInHandle   0x0006f6       data     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/main.c
+      USBGenericOutHandle   0x0006f4       data     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/main.c
+        USBINBufByteCount   0x0006f2       data     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/main.c
+      USBINBufReadPointer   0x0006f0       data     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/main.c
+     USBINBufWritePointer   0x0006ee       data     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/main.c
+              USBINBuffer   0x000580       data     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/main.c
+USBStatusStageEnabledFlag1   0x00008a       data     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/usb_device.c
+USBStatusStageEnabledFlag2   0x00008b       data     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/usb_device.c
+USBStatusStageTimeoutCounter   0x000088       data     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/usb_device.c
+                    USTAT   0x000f6c       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                USTATbits   0x000f6c       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                USTATcopy   0x000081       data     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/usb_device.c
+                   WDTCON   0x000fd1       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+               WDTCONbits   0x000fd1       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                     WREG   0x000fe8       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                 __AARGB0   0x000007       data     extern C:\MCC18\v3_39\src\traditional\math\aarg.asm
+                 __AARGB1   0x000006       data     extern C:\MCC18\v3_39\src\traditional\math\aarg.asm
+                 __AARGB2   0x000005       data     extern C:\MCC18\v3_39\src\traditional\math\aarg.asm
+                 __AARGB3   0x000004       data     extern C:\MCC18\v3_39\src\traditional\math\aarg.asm
+                 __AARGB4   0x000003       data     extern C:\MCC18\v3_39\src\traditional\math\aarg.asm
+                 __AARGB5   0x000002       data     extern C:\MCC18\v3_39\src\traditional\math\aarg.asm
+                 __AARGB6   0x000001       data     extern C:\MCC18\v3_39\src\traditional\math\aarg.asm
+                 __AARGB7   0x000000       data     extern C:\MCC18\v3_39\src\traditional\math\aarg.asm
+                   __AEXP   0x000008       data     extern C:\MCC18\v3_39\src\traditional\math\aarg.asm
+                __FPFLAGS   0x00000a       data     extern C:\MCC18\v3_39\src\traditional\math\cmath18.asm
+            __FPFLAGSbits   0x00000a       data     extern C:\MCC18\v3_39\src\traditional\math\cmath18.asm
+                  __REMB0   0x000003       data     extern C:\MCC18\v3_39\src\traditional\math\aarg.asm
+                  __REMB1   0x000002       data     extern C:\MCC18\v3_39\src\traditional\math\aarg.asm
+                  __REMB2   0x000001       data     extern C:\MCC18\v3_39\src\traditional\math\aarg.asm
+                  __REMB3   0x000000       data     extern C:\MCC18\v3_39\src\traditional\math\aarg.asm
+                  __tmp_0   0x00000b       data     static /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/main.c
+                  __tmp_0   0x00000b       data     static /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/queue.c
+                  __tmp_0   0x00000b       data     static /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/usb_device.c
+     controlTransferState   0x000070       data     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/usb_device.c
+                curr_byte   0x0000ac       data     static C:\MCC18\v3_39\src\traditional\startup\c018i.c
+               curr_entry   0x0000ae       data     static C:\MCC18\v3_39\src\traditional\startup\c018i.c
+currentTerminationSetting   0x0000a3       data     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/main.c
+                 data_ptr   0x0000b0       data     static C:\MCC18\v3_39\src\traditional\startup\c018i.c
+                debugMode   0x0000a8       data     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/main.c
+              delay_count   0x0006ec       data     static /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/main.c
+          endpoint_number   0x000082       data     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/usb_device.c
+               ep_data_in   0x000084       data     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/usb_device.c
+              ep_data_out   0x000086       data     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/usb_device.c
+           fakeSpiMessage   0x00008e       data     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/main.c
+                        i   0x0006e1       data     static /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/main.c
+                        i   0x0006e9       data     static /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/main.c
+                  inPipes   0x000071       data     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/usb_device.c
+                        j   0x0006e2       data     static /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/main.c
+                        j   0x0006ea       data     static /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/main.c
+                led_count   0x0006fb       data     static /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/main.c
+      messageTransmitFlag   0x00069d       data     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/main.c
+ numberOfBytesFromMessage   0x0000b5       data     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/main.c
+                 outPipes   0x000076       data     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/usb_device.c
+   pBDTEntryEP0OutCurrent   0x000063       data     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/usb_device.c
+      pBDTEntryEP0OutNext   0x000065       data     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/usb_device.c
+              pBDTEntryIn   0x00006b       data     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/usb_device.c
+             pBDTEntryOut   0x000067       data     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/usb_device.c
+                     pDst   0x00007d       data     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/usb_device.c
+                     prom   0x0000a9       data     static C:\MCC18\v3_39\src\traditional\startup\c018i.c
+     request2SendIamAlive   0x0000a2       data     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/main.c
+      sendIamAliveCounter   0x0000a4       data     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/main.c
+        shortPacketStatus   0x00006f       data     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/usb_device.c
+             sizeOfPacket   0x0000b6       data     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/main.c
+                 spiState   0x0000b3       data     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/main.c
+          tempCharCounter   0x0006fe       data     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/main.c
+             tempCheckSum   0x0000a1       data     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/main.c
+              tempCommand   0x0000b4       data     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/main.c
+              tempUSBdata   0x00069e       data     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/main.c
+         tempUSBdataIndex   0x0006de       data     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/main.c
+              timeCounter   0x0006fd       data     static /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/main.c
+     usbNeeds2TransmitSPI   0x0006f8       data     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/main.c
+usbWaitingFor60BytesTimer   0x0006df       data     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/main.c
+
+
+
+                              Symbols - Sorted by Address
+                     Name    Address   Location    Storage File                     
+                ---------  ---------  ---------  --------- ---------                
+                   _entry   0x000000    program     extern C:\MCC18\v3_39\src\traditional\startup\c018i.c
+       ___return_lbl00000   0x000004    program     static                          
+                 High_ISR   0x000008    program     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/main.c
+       ___return_lbl00003   0x00000c    program     static                          
+                  Low_ISR   0x000018    program     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/main.c
+       ___return_lbl00004   0x00001c    program     static                          
+                   _reset   0x001000    program     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/main.c
+       ___return_lbl00000   0x001004    program     static                          
+        Remapped_High_ISR   0x001008    program     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/main.c
+       ___return_lbl00001   0x00100c    program     static                          
+         Remapped_Low_ISR   0x001018    program     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/main.c
+       ___return_lbl00002   0x00101c    program     static                          
+            USBDeviceInit   0x001044    program     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/usb_device.c
+           USBDeviceTasks   0x00115c    program     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/usb_device.c
+          USBStallHandler   0x00129c    program     static /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/usb_device.c
+               USBSuspend   0x0012ce    program     static /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/usb_device.c
+       USBWakeFromSuspend   0x0012f8    program     static /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/usb_device.c
+         USBCtrlEPService   0x001326    program     static /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/usb_device.c
+   USBCtrlTrfSetupHandler   0x0013f6    program     static /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/usb_device.c
+     USBCtrlTrfOutHandler   0x001450    program     static /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/usb_device.c
+      USBCtrlTrfInHandler   0x00149a    program     static /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/usb_device.c
+       USBCheckStdRequest   0x001546    program     static /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/usb_device.c
+  USBStdFeatureReqHandler   0x001604    program     static /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/usb_device.c
+USBCtrlEPAllowStatusStage   0x001800    program     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/usb_device.c
+  USBCtrlEPAllowDataStage   0x0018a2    program     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/usb_device.c
+      USBStdGetDscHandler   0x00191e    program     static /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/usb_device.c
+   USBStdGetStatusHandler   0x0019d8    program     static /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/usb_device.c
+ USBCtrlEPServiceComplete   0x001a8c    program     static /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/usb_device.c
+      USBCtrlTrfTxService   0x001b4e    program     static /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/usb_device.c
+      USBCtrlTrfRxService   0x001c0c    program     static /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/usb_device.c
+      USBStdSetCfgHandler   0x001d4a    program     static /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/usb_device.c
+     USBConfigureEndpoint   0x001e1a    program     static /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/usb_device.c
+        USBEnableEndpoint   0x001ed8    program     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/usb_device.c
+         USBStallEndpoint   0x001f46    program     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/usb_device.c
+     USBTransferOnePacket   0x002004    program     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/usb_device.c
+              USBCancelIO   0x002104    program     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/usb_device.c
+          USBDeviceDetach   0x00215c    program     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/usb_device.c
+          USBDeviceAttach   0x002166    program     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/usb_device.c
+  YourHighPriorityISRCode   0x002194    program     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/main.c
+   YourLowPriorityISRCode   0x00222a    program     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/main.c
+                     main   0x00224c    program     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/main.c
+         InitializeSystem   0x002256    program     static /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/main.c
+                 UserInit   0x00226a    program     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/main.c
+                ProcessIO   0x0022ea    program     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/main.c
+SendReceiveSPIPacketRealFunction   0x0026a8    program     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/main.c
+           BlinkUSBStatus   0x002792    program     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/main.c
+             USBCBSuspend   0x002810    program     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/main.c
+     USBCBWakeFromSuspend   0x002812    program     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/main.c
+        USBCB_SOF_Handler   0x002814    program     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/main.c
+        USBCBErrorHandler   0x002816    program     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/main.c
+       USBCBCheckOtherReq   0x002818    program     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/main.c
+    USBCBStdSetDscHandler   0x00281a    program     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/main.c
+              USBCBInitEP   0x00281c    program     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/main.c
+          USBCBSendResume   0x002854    program     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/main.c
+USER_USB_CALLBACK_EVENT_HANDLER   0x00289c    program     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/main.c
+              writeEEPROM   0x002930    program     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/main.c
+        ___while_lbl00154   0x00296e    program     static                          
+        ___while_lbl00155   0x002972    program     static                          
+       ___return_lbl00153   0x00297e    program     static                          
+               readEEPROM   0x002988    program     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/main.c
+       ___return_lbl00156   0x0029aa    program     static                          
+             initMsgQueue   0x0029b4    program     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/queue.c
+             addMsg2Queue   0x002a62    program     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/queue.c
+       removeMsgfromQueue   0x002b58    program     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/queue.c
+ spiTransmitandReceiveMsg   0x002c4e    program     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/queue.c
+        ___while_lbl00014   0x002c7a    program     static                          
+       ___case_1_lbl00017   0x002c8c    program     static                          
+        ___while_lbl00018   0x002c8e    program     static                          
+         ___else_lbl00021   0x002cb4    program     static                          
+        ___while_lbl00022   0x002cb6    program     static                          
+           ___if_lbl00020   0x002cb6    program     static                          
+        ___while_lbl00023   0x002cba    program     static                          
+        ___while_lbl00019   0x002cde    program     static                          
+      ___default_lbl00024   0x002cfe    program     static                          
+   ___switchexit_lbl00016   0x002d10    program     static                          
+        ___while_lbl00015   0x002d12    program     static                          
+       ___return_lbl00013   0x002d1a    program     static                          
+                    delay   0x002d32    program     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/queue.c
+               device_dsc   0x002d52    program     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/usb_descriptors.c
+        configDescriptor1   0x002d64    program     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/usb_descriptors.c
+                    sd000   0x002d84    program     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/usb_descriptors.c
+                    sd001   0x002d88    program     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/usb_descriptors.c
+                    sd002   0x002dbc    program     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/usb_descriptors.c
+                    sd003   0x002df2    program     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/usb_descriptors.c
+               USB_CD_Ptr   0x002dfc    program     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/usb_descriptors.c
+               USB_SD_Ptr   0x002dfe    program     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/usb_descriptors.c
+                _do_cinit   0x002e06    program     extern C:\MCC18\v3_39\src\traditional\startup\c018i.c
+                     test   0x002e20    program     static                          
+                copy_loop   0x002e78    program     static                          
+            copy_one_byte   0x002e7e    program     static                          
+             done_copying   0x002e8c    program     static                          
+       ___return_lbl00002   0x002ea2    program     static                          
+                     done   0x002ea2    program     static                          
+                   memcpy   0x002ea4    program     extern C:\MCC18\v3_39\src\traditional\stdclib\memcpy.asm
+                    jLoop   0x002ecc    program     static C:\MCC18\v3_39\src\traditional\stdclib\memcpy.asm
+              _4jContinue   0x002ed8    program     static C:\MCC18\v3_39\src\traditional\stdclib\memcpy.asm
+                   _5jEnd   0x002ee2    program     static C:\MCC18\v3_39\src\traditional\stdclib\memcpy.asm
+                     jEnd   0x002ee8    program     static C:\MCC18\v3_39\src\traditional\stdclib\memcpy.asm
+                   memset   0x002efa    program     extern C:\MCC18\v3_39\src\traditional\stdclib\memset.asm
+                    jLoop   0x002f0e    program     static C:\MCC18\v3_39\src\traditional\stdclib\memset.asm
+              _2jContinue   0x002f1a    program     static C:\MCC18\v3_39\src\traditional\stdclib\memset.asm
+                   _3jEnd   0x002f24    program     static C:\MCC18\v3_39\src\traditional\stdclib\memset.asm
+                     jEnd   0x002f2c    program     static C:\MCC18\v3_39\src\traditional\stdclib\memset.asm
+                  OpenSPI   0x002f2e    program     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/spi/spi_open.c
+                 WriteSPI   0x002f86    program     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/spi/spi_writ.c
+            __zero_memory   0x002faa    program     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                   loop_h   0x002fb8    program     static C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+               zero_block   0x002fb8    program     static C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                compare_l   0x002fc0    program     static C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                   loop_l   0x002fc2    program     static C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                 _startup   0x002fca    program     extern C:\MCC18\v3_39\src\traditional\startup\c018i.c
+                     loop   0x002fda    program     static                          
+       ___return_lbl00001   0x002fe4    program     static                          
+                  ReadSPI   0x002fe6    program     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/spi/spi_read.c
+                   __init   0x002ff0    program     extern C:\MCC18\v3_39\src\traditional\stdclib\__init.c
+               __config_0   0x300000    program     static /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/main.c
+               __config_1   0x300001    program     static /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/main.c
+               __config_2   0x300002    program     static /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/main.c
+               __config_3   0x300003    program     static /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/main.c
+               __config_4   0x300005    program     static /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/main.c
+               __config_5   0x300006    program     static /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/main.c
+               __config_6   0x300008    program     static /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/main.c
+               __config_7   0x300009    program     static /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/main.c
+               __config_8   0x30000a    program     static /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/main.c
+               __config_9   0x30000b    program     static /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/main.c
+              __config_10   0x30000c    program     static /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/main.c
+              __config_11   0x30000d    program     static /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/main.c
+                 __AARGB7   0x000000       data     extern C:\MCC18\v3_39\src\traditional\math\aarg.asm
+                  __REMB3   0x000000       data     extern C:\MCC18\v3_39\src\traditional\math\aarg.asm
+                 __AARGB6   0x000001       data     extern C:\MCC18\v3_39\src\traditional\math\aarg.asm
+                  __REMB2   0x000001       data     extern C:\MCC18\v3_39\src\traditional\math\aarg.asm
+                 __AARGB5   0x000002       data     extern C:\MCC18\v3_39\src\traditional\math\aarg.asm
+                  __REMB1   0x000002       data     extern C:\MCC18\v3_39\src\traditional\math\aarg.asm
+                 __AARGB4   0x000003       data     extern C:\MCC18\v3_39\src\traditional\math\aarg.asm
+                  __REMB0   0x000003       data     extern C:\MCC18\v3_39\src\traditional\math\aarg.asm
+                 __AARGB3   0x000004       data     extern C:\MCC18\v3_39\src\traditional\math\aarg.asm
+                 __AARGB2   0x000005       data     extern C:\MCC18\v3_39\src\traditional\math\aarg.asm
+                 __AARGB1   0x000006       data     extern C:\MCC18\v3_39\src\traditional\math\aarg.asm
+                 __AARGB0   0x000007       data     extern C:\MCC18\v3_39\src\traditional\math\aarg.asm
+                   __AEXP   0x000008       data     extern C:\MCC18\v3_39\src\traditional\math\aarg.asm
+                     SIGN   0x000009       data     extern C:\MCC18\v3_39\src\traditional\math\cmath18.asm
+                __FPFLAGS   0x00000a       data     extern C:\MCC18\v3_39\src\traditional\math\cmath18.asm
+            __FPFLAGSbits   0x00000a       data     extern C:\MCC18\v3_39\src\traditional\math\cmath18.asm
+                  __tmp_0   0x00000b       data     static /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/main.c
+                  __tmp_0   0x00000b       data     static /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/usb_device.c
+                  __tmp_0   0x00000b       data     static /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/queue.c
+           USBDeviceState   0x000060       data     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/usb_device.c
+   USBActiveConfiguration   0x000061       data     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/usb_device.c
+    USBAlternateInterface   0x000062       data     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/usb_device.c
+   pBDTEntryEP0OutCurrent   0x000063       data     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/usb_device.c
+      pBDTEntryEP0OutNext   0x000065       data     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/usb_device.c
+             pBDTEntryOut   0x000067       data     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/usb_device.c
+              pBDTEntryIn   0x00006b       data     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/usb_device.c
+        shortPacketStatus   0x00006f       data     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/usb_device.c
+     controlTransferState   0x000070       data     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/usb_device.c
+                  inPipes   0x000071       data     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/usb_device.c
+                 outPipes   0x000076       data     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/usb_device.c
+                     pDst   0x00007d       data     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/usb_device.c
+             RemoteWakeup   0x00007f       data     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/usb_device.c
+        USBBusIsSuspended   0x000080       data     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/usb_device.c
+                USTATcopy   0x000081       data     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/usb_device.c
+          endpoint_number   0x000082       data     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/usb_device.c
+       BothEP0OutUOWNsSet   0x000083       data     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/usb_device.c
+               ep_data_in   0x000084       data     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/usb_device.c
+              ep_data_out   0x000086       data     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/usb_device.c
+USBStatusStageTimeoutCounter   0x000088       data     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/usb_device.c
+USBDeferStatusStagePacket   0x000089       data     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/usb_device.c
+USBStatusStageEnabledFlag1   0x00008a       data     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/usb_device.c
+USBStatusStageEnabledFlag2   0x00008b       data     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/usb_device.c
+USBDeferINDataStagePackets   0x00008c       data     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/usb_device.c
+USBDeferOUTDataStagePackets   0x00008d       data     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/usb_device.c
+           fakeSpiMessage   0x00008e       data     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/main.c
+             tempCheckSum   0x0000a1       data     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/main.c
+     request2SendIamAlive   0x0000a2       data     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/main.c
+currentTerminationSetting   0x0000a3       data     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/main.c
+      sendIamAliveCounter   0x0000a4       data     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/main.c
+                debugMode   0x0000a8       data     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/main.c
+                     prom   0x0000a9       data     static C:\MCC18\v3_39\src\traditional\startup\c018i.c
+                curr_byte   0x0000ac       data     static C:\MCC18\v3_39\src\traditional\startup\c018i.c
+               curr_entry   0x0000ae       data     static C:\MCC18\v3_39\src\traditional\startup\c018i.c
+                 data_ptr   0x0000b0       data     static C:\MCC18\v3_39\src\traditional\startup\c018i.c
+                 spiState   0x0000b3       data     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/main.c
+              tempCommand   0x0000b4       data     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/main.c
+ numberOfBytesFromMessage   0x0000b5       data     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/main.c
+             sizeOfPacket   0x0000b6       data     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/main.c
+                      BDT   0x000400       data     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/usb_device.c
+                 SetupPkt   0x000414       data     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/usb_device.c
+              CtrlTrfData   0x00041c       data     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/usb_device.c
+                OUTPacket   0x000500       data     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/main.c
+                 INPacket   0x000540       data     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/main.c
+              USBINBuffer   0x000580       data     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/main.c
+      messageTransmitFlag   0x00069d       data     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/main.c
+              tempUSBdata   0x00069e       data     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/main.c
+         tempUSBdataIndex   0x0006de       data     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/main.c
+usbWaitingFor60BytesTimer   0x0006df       data     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/main.c
+                        i   0x0006e1       data     static /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/main.c
+                        j   0x0006e2       data     static /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/main.c
+            DummyVariable   0x0006e3       data     static /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/main.c
+                 FSR1Save   0x0006e4       data     static /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/main.c
+                 FSR2Save   0x0006e6       data     static /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/main.c
+                PRODLSave   0x0006e8       data     static /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/main.c
+                        i   0x0006e9       data     static /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/main.c
+                        j   0x0006ea       data     static /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/main.c
+            DummyVariable   0x0006eb       data     static /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/main.c
+              delay_count   0x0006ec       data     static /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/main.c
+     USBINBufWritePointer   0x0006ee       data     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/main.c
+      USBINBufReadPointer   0x0006f0       data     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/main.c
+        USBINBufByteCount   0x0006f2       data     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/main.c
+      USBGenericOutHandle   0x0006f4       data     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/main.c
+       USBGenericInHandle   0x0006f6       data     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/main.c
+     usbNeeds2TransmitSPI   0x0006f8       data     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/main.c
+              NumMessages   0x0006f9       data     static /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/main.c
+              BytesToXmit   0x0006fa       data     static /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/main.c
+                led_count   0x0006fb       data     static /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/main.c
+              timeCounter   0x0006fd       data     static /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/main.c
+          tempCharCounter   0x0006fe       data     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/main.c
+                 DummyVar   0x0006ff       data     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/pic18f2550_usb/main.c
+                    UFRML   0x000f66       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                UFRMLbits   0x000f66       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                     UFRM   0x000f66       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                UFRMHbits   0x000f67       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                    UFRMH   0x000f67       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                  UIRbits   0x000f68       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                      UIR   0x000f68       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                  UIEbits   0x000f69       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                      UIE   0x000f69       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                 UEIRbits   0x000f6a       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                     UEIR   0x000f6a       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                     UEIE   0x000f6b       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                 UEIEbits   0x000f6b       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                USTATbits   0x000f6c       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                    USTAT   0x000f6c       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                     UCON   0x000f6d       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                 UCONbits   0x000f6d       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                UADDRbits   0x000f6e       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                    UADDR   0x000f6e       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                     UCFG   0x000f6f       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                 UCFGbits   0x000f6f       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                     UEP0   0x000f70       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                 UEP0bits   0x000f70       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                 UEP1bits   0x000f71       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                     UEP1   0x000f71       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                     UEP2   0x000f72       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                 UEP2bits   0x000f72       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                     UEP3   0x000f73       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                 UEP3bits   0x000f73       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                     UEP4   0x000f74       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                 UEP4bits   0x000f74       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                     UEP5   0x000f75       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                 UEP5bits   0x000f75       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                     UEP6   0x000f76       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                 UEP6bits   0x000f76       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                     UEP7   0x000f77       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                 UEP7bits   0x000f77       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                 UEP8bits   0x000f78       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                     UEP8   0x000f78       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                 UEP9bits   0x000f79       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                     UEP9   0x000f79       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                    UEP10   0x000f7a       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                UEP10bits   0x000f7a       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                UEP11bits   0x000f7b       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                    UEP11   0x000f7b       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                    UEP12   0x000f7c       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                UEP12bits   0x000f7c       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                UEP13bits   0x000f7d       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                    UEP13   0x000f7d       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                    UEP14   0x000f7e       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                UEP14bits   0x000f7e       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                    UEP15   0x000f7f       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                UEP15bits   0x000f7f       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                PORTAbits   0x000f80       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                    PORTA   0x000f80       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                PORTBbits   0x000f81       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                    PORTB   0x000f81       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                PORTCbits   0x000f82       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                    PORTC   0x000f82       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                PORTEbits   0x000f84       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                    PORTE   0x000f84       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                 LATAbits   0x000f89       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                     LATA   0x000f89       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                     LATB   0x000f8a       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                 LATBbits   0x000f8a       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                     LATC   0x000f8b       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                 LATCbits   0x000f8b       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                    TRISA   0x000f92       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                TRISAbits   0x000f92       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                     DDRA   0x000f92       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                 DDRAbits   0x000f92       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                    TRISB   0x000f93       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                TRISBbits   0x000f93       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                     DDRB   0x000f93       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                 DDRBbits   0x000f93       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                    TRISC   0x000f94       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                TRISCbits   0x000f94       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                     DDRC   0x000f94       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                 DDRCbits   0x000f94       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                  OSCTUNE   0x000f9b       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+              OSCTUNEbits   0x000f9b       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                     PIE1   0x000f9d       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                 PIE1bits   0x000f9d       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                 PIR1bits   0x000f9e       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                     PIR1   0x000f9e       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                 IPR1bits   0x000f9f       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                     IPR1   0x000f9f       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                 PIE2bits   0x000fa0       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                     PIE2   0x000fa0       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                 PIR2bits   0x000fa1       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                     PIR2   0x000fa1       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                 IPR2bits   0x000fa2       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                     IPR2   0x000fa2       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                   EECON1   0x000fa6       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+               EECON1bits   0x000fa6       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                   EECON2   0x000fa7       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                   EEDATA   0x000fa8       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                    EEADR   0x000fa9       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                RCSTAbits   0x000fab       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                    RCSTA   0x000fab       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                    TXSTA   0x000fac       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                TXSTAbits   0x000fac       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                    TXREG   0x000fad       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                    RCREG   0x000fae       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                    SPBRG   0x000faf       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                   SPBRGH   0x000fb0       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                T3CONbits   0x000fb1       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                    T3CON   0x000fb1       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                    TMR3L   0x000fb2       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                    TMR3H   0x000fb3       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                CMCONbits   0x000fb4       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                    CMCON   0x000fb4       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+               CVRCONbits   0x000fb5       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                   CVRCON   0x000fb5       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+              ECCP1ASbits   0x000fb6       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                  ECCP1AS   0x000fb6       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                   CCP1AS   0x000fb6       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+               CCP1ASbits   0x000fb6       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+             ECCP1DELbits   0x000fb7       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                 ECCP1DEL   0x000fb7       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+              CCP1DELbits   0x000fb7       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                  CCP1DEL   0x000fb7       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                  BAUDCON   0x000fb8       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+              BAUDCONbits   0x000fb8       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                  BAUDCTL   0x000fb8       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+              BAUDCTLbits   0x000fb8       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                  CCP2CON   0x000fba       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+              CCP2CONbits   0x000fba       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                   CCPR2L   0x000fbb       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                    CCPR2   0x000fbb       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                   CCPR2H   0x000fbc       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                  CCP1CON   0x000fbd       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+              CCP1CONbits   0x000fbd       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                   CCPR1L   0x000fbe       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                    CCPR1   0x000fbe       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                   CCPR1H   0x000fbf       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+               ADCON2bits   0x000fc0       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                   ADCON2   0x000fc0       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                   ADCON1   0x000fc1       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+               ADCON1bits   0x000fc1       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                   ADCON0   0x000fc2       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+               ADCON0bits   0x000fc2       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                    ADRES   0x000fc3       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                   ADRESL   0x000fc3       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                   ADRESH   0x000fc4       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                  SSPCON2   0x000fc5       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+              SSPCON2bits   0x000fc5       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                  SSPCON1   0x000fc6       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+              SSPCON1bits   0x000fc6       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                  SSPSTAT   0x000fc7       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+              SSPSTATbits   0x000fc7       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                   SSPADD   0x000fc8       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                   SSPBUF   0x000fc9       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                T2CONbits   0x000fca       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                    T2CON   0x000fca       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                      PR2   0x000fcb       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                     TMR2   0x000fcc       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                T1CONbits   0x000fcd       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                    T1CON   0x000fcd       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                    TMR1L   0x000fce       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                    TMR1H   0x000fcf       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                     RCON   0x000fd0       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                 RCONbits   0x000fd0       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                   WDTCON   0x000fd1       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+               WDTCONbits   0x000fd1       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+               LVDCONbits   0x000fd2       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                   LVDCON   0x000fd2       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+              HLVDCONbits   0x000fd2       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                  HLVDCON   0x000fd2       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+               OSCCONbits   0x000fd3       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                   OSCCON   0x000fd3       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                    T0CON   0x000fd5       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                T0CONbits   0x000fd5       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                    TMR0L   0x000fd6       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                    TMR0H   0x000fd7       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+               STATUSbits   0x000fd8       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                   STATUS   0x000fd8       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                    FSR2L   0x000fd9       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                     FSR2   0x000fd9       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                    FSR2H   0x000fda       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                   PLUSW2   0x000fdb       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                  PREINC2   0x000fdc       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                 POSTDEC2   0x000fdd       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                 POSTINC2   0x000fde       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                    INDF2   0x000fdf       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                      BSR   0x000fe0       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                     FSR1   0x000fe1       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                    FSR1L   0x000fe1       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                    FSR1H   0x000fe2       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                   PLUSW1   0x000fe3       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                  PREINC1   0x000fe4       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                 POSTDEC1   0x000fe5       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                 POSTINC1   0x000fe6       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                    INDF1   0x000fe7       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                     WREG   0x000fe8       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                     FSR0   0x000fe9       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                    FSR0L   0x000fe9       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                    FSR0H   0x000fea       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                   PLUSW0   0x000feb       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                  PREINC0   0x000fec       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                 POSTDEC0   0x000fed       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                 POSTINC0   0x000fee       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                    INDF0   0x000fef       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+              INTCON3bits   0x000ff0       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                  INTCON3   0x000ff0       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+              INTCON2bits   0x000ff1       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                  INTCON2   0x000ff1       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+               INTCONbits   0x000ff2       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                   INTCON   0x000ff2       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                     PROD   0x000ff3       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                    PRODL   0x000ff3       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                    PRODH   0x000ff4       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                   TABLAT   0x000ff5       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                   TBLPTR   0x000ff6       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                  TBLPTRL   0x000ff6       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                  TBLPTRH   0x000ff7       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                  TBLPTRU   0x000ff8       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                      PCL   0x000ff9       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                       PC   0x000ff9       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                   PCLATH   0x000ffa       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                   PCLATU   0x000ffb       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                   STKPTR   0x000ffc       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+               STKPTRbits   0x000ffc       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                      TOS   0x000ffd       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                     TOSL   0x000ffd       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                     TOSH   0x000ffe       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+                     TOSU   0x000fff       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2550.asm
+
+

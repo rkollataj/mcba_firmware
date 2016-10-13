@@ -1,0 +1,3 @@
+Warning[2054] ../main.c 932 : suspicious pointer conversion
+Warning[2054] ../main.c 934 : suspicious pointer conversion
+Warning[2054] ../main.c 939 : suspicious pointer conversion
