@@ -61,7 +61,7 @@
 unsigned char DummyVar;
 #define ImprovedNop()   {DummyVar++;}
 
-#define dUSB_FW_VERSION_MAJOR 0x02  //use 0b1nnn mmmm oooo ppppfor any Beta release
+#define dUSB_FW_VERSION_MAJOR 0xff  //use 0b1nnn mmmm oooo ppppfor any Beta release
 #define dUSB_FW_VERSION_MINOR 0x00
 
 #define dTRUE 1
@@ -1169,7 +1169,7 @@ void SendReceiveSPIPacketRealFunction(BOOL SendDataAvailable)
     LATBbits.LATB2 = 0;
     //Now wait some delay for the interrupt latency on the SPI slave, and to allow
     //enough time for the slave firmware to prepare to receive a SPI transmission packet.
-    for(i = 0; i < 12; i++);
+    for(i = 0; i < 20; i++);
     ImprovedNop();
     ImprovedNop();
     ImprovedNop();
