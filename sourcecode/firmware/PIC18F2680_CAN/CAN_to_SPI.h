@@ -5,7 +5,7 @@
 //------------------------------------------------------------------------------
 //Definitions
 //------------------------------------------------------------------------------
-#define dCAN_FW_VERSION_MAJOR 0x02
+#define dCAN_FW_VERSION_MAJOR 0xff
 #define dCAN_FW_VERSION_MINOR 0x03
 
 #define SPI_CS  PORTCbits.RC2 

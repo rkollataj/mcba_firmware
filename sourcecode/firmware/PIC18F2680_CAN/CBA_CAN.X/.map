@@ -1,5 +1,5 @@
 MPLINK 4.40, Linker
-Linker Map File - Created Thu Oct 13 13:54:12 2016
+Linker Map File - Created Thu Oct 13 14:26:46 2016
 
                                  Section Info
                   Section       Type    Address   Location Size(Bytes)
@@ -23,15 +23,15 @@ Linker Map File - Created Thu Oct 13 13:54:12 2016
          .idata_c018i.o_i    romdata   0x00000e    program   0x000000
                low_vector       code   0x000018    program   0x000006
                    .cinit    romdata   0x00001e    program   0x00000e
-             .code_main.o       code   0x00002c    program   0x0018e6
-            .code_queue.o       code   0x001912    program   0x0002ca
-               _cinit_scn       code   0x001bdc    program   0x00009e
-         .code_spi_open.o       code   0x001c7a    program   0x000066
-         .code_spi_writ.o       code   0x001ce0    program   0x000028
-                    .code       code   0x001d08    program   0x000020
-             _startup_scn       code   0x001d28    program   0x00001c
-         .code_spi_read.o       code   0x001d44    program   0x00000c
-          .idata_main.o_i    romdata   0x001d50    program   0x000347
+             .code_main.o       code   0x00002c    program   0x0018d2
+            .code_queue.o       code   0x0018fe    program   0x0002ca
+               _cinit_scn       code   0x001bc8    program   0x00009e
+         .code_spi_open.o       code   0x001c66    program   0x000066
+         .code_spi_writ.o       code   0x001ccc    program   0x000028
+                    .code       code   0x001cf4    program   0x000020
+             _startup_scn       code   0x001d14    program   0x00001c
+         .code_spi_read.o       code   0x001d30    program   0x00000c
+          .idata_main.o_i    romdata   0x001d3c    program   0x000347
     .config_300001_main.o    romdata   0x300001    program   0x000001
     .config_300002_main.o    romdata   0x300002    program   0x000001
     .config_300003_main.o    romdata   0x300003    program   0x000001
@@ -88,55 +88,55 @@ Linker Map File - Created Thu Oct 13 13:54:12 2016
                                Start         End      
                            ---------   ---------      
                             0x000000    0x00000d      
-                            0x000018    0x002096      
+                            0x000018    0x002082      
                             0x300001    0x300003      
                             0x300005    0x300006      
                             0x300008    0x30000d      
-            8344 out of 66584 program addresses used, program memory utilization is 12%
+            8324 out of 66584 program addresses used, program memory utilization is 12%
 
 
 
                               Symbols - Sorted by Name
                      Name    Address   Location    Storage File                     
                 ---------  ---------  ---------  --------- ---------                
-   CheckForTXTrasnmitEcho   0x00168a    program     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/PIC18F2680_CAN/main.c
+   CheckForTXTrasnmitEcho   0x001676    program     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/PIC18F2680_CAN/main.c
                  High_ISR   0x000052    program     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/PIC18F2680_CAN/main.c
-            InitializeCAN   0x000744    program     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/PIC18F2680_CAN/main.c
-            InitializeCCP   0x000714    program     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/PIC18F2680_CAN/main.c
-            InitializeSPI   0x00072a    program     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/PIC18F2680_CAN/main.c
-         InitializeTimer0   0x000706    program     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/PIC18F2680_CAN/main.c
+            InitializeCAN   0x000742    program     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/PIC18F2680_CAN/main.c
+            InitializeCCP   0x000712    program     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/PIC18F2680_CAN/main.c
+            InitializeSPI   0x000728    program     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/PIC18F2680_CAN/main.c
+         InitializeTimer0   0x000704    program     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/PIC18F2680_CAN/main.c
                   Low_ISR   0x00002c    program     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/PIC18F2680_CAN/main.c
-                  OpenSPI   0x001c7a    program     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/PIC18F2680_CAN/spi_open.c
-               PopCANFIFO   0x00142a    program     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/PIC18F2680_CAN/main.c
+                  OpenSPI   0x001c66    program     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/PIC18F2680_CAN/spi_open.c
+               PopCANFIFO   0x001416    program     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/PIC18F2680_CAN/main.c
    PrepareIAmAliveMessage   0x000656    program     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/PIC18F2680_CAN/main.c
-                  ReadSPI   0x001d44    program     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/PIC18F2680_CAN/spi_read.c
-              TransmitTX0   0x0010be    program     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/PIC18F2680_CAN/main.c
-              TransmitTX1   0x0011e2    program     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/PIC18F2680_CAN/main.c
-              TransmitTX2   0x001306    program     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/PIC18F2680_CAN/main.c
-         UpdateCANBitRate   0x000e06    program     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/PIC18F2680_CAN/main.c
-            UpdateCANMode   0x000d58    program     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/PIC18F2680_CAN/main.c
-          UpdateLEDToggle   0x000c32    program     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/PIC18F2680_CAN/main.c
-                 WriteSPI   0x001ce0    program     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/PIC18F2680_CAN/spi_writ.c
-       ___case_1_lbl00112   0x000b66    program     static                          
-       ___case_2_lbl00114   0x000b8c    program     static                          
-       ___case_3_lbl00116   0x000bb6    program     static                          
-       ___case_4_lbl00118   0x000bdc    program     static                          
-      ___default_lbl00120   0x000c08    program     static                          
-           ___if_lbl00113   0x000b8a    program     static                          
-           ___if_lbl00115   0x000bb4    program     static                          
-           ___if_lbl00117   0x000bda    program     static                          
-           ___if_lbl00119   0x000c06    program     static                          
+                  ReadSPI   0x001d30    program     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/PIC18F2680_CAN/spi_read.c
+              TransmitTX0   0x0010bc    program     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/PIC18F2680_CAN/main.c
+              TransmitTX1   0x0011da    program     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/PIC18F2680_CAN/main.c
+              TransmitTX2   0x0012f8    program     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/PIC18F2680_CAN/main.c
+         UpdateCANBitRate   0x000e04    program     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/PIC18F2680_CAN/main.c
+            UpdateCANMode   0x000d56    program     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/PIC18F2680_CAN/main.c
+          UpdateLEDToggle   0x000c30    program     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/PIC18F2680_CAN/main.c
+                 WriteSPI   0x001ccc    program     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/PIC18F2680_CAN/spi_writ.c
+       ___case_1_lbl00112   0x000b64    program     static                          
+       ___case_2_lbl00114   0x000b8a    program     static                          
+       ___case_3_lbl00116   0x000bb4    program     static                          
+       ___case_4_lbl00118   0x000bda    program     static                          
+      ___default_lbl00120   0x000c06    program     static                          
+           ___if_lbl00113   0x000b88    program     static                          
+           ___if_lbl00115   0x000bb2    program     static                          
+           ___if_lbl00117   0x000bd8    program     static                          
+           ___if_lbl00119   0x000c04    program     static                          
        ___return_lbl00000   0x000004    program     static                          
        ___return_lbl00000   0x00000c    program     static                          
-       ___return_lbl00001   0x001d42    program     static                          
+       ___return_lbl00001   0x001d2e    program     static                          
        ___return_lbl00001   0x00001c    program     static                          
-       ___return_lbl00002   0x001c78    program     static                          
-       ___return_lbl00106   0x000af8    program     static                          
-       ___return_lbl00109   0x000b24    program     static                          
-       ___return_lbl00110   0x000c1e    program     static                          
-   ___switchexit_lbl00111   0x000c0e    program     static                          
-        ___while_lbl00107   0x000ae8    program     static                          
-        ___while_lbl00108   0x000aec    program     static                          
+       ___return_lbl00002   0x001c64    program     static                          
+       ___return_lbl00106   0x000af6    program     static                          
+       ___return_lbl00109   0x000b22    program     static                          
+       ___return_lbl00110   0x000c1c    program     static                          
+   ___switchexit_lbl00111   0x000c0c    program     static                          
+        ___while_lbl00107   0x000ae6    program     static                          
+        ___while_lbl00108   0x000aea    program     static                          
                __config_0   0x300001    program     static /home/remol/Projects/mcba_firmware/sourcecode/firmware/PIC18F2680_CAN/main.c
                __config_1   0x300002    program     static /home/remol/Projects/mcba_firmware/sourcecode/firmware/PIC18F2680_CAN/main.c
               __config_10   0x30000d    program     static /home/remol/Projects/mcba_firmware/sourcecode/firmware/PIC18F2680_CAN/main.c
@@ -149,29 +149,29 @@ Linker Map File - Created Thu Oct 13 13:54:12 2016
                __config_8   0x30000b    program     static /home/remol/Projects/mcba_firmware/sourcecode/firmware/PIC18F2680_CAN/main.c
                __config_9   0x30000c    program     static /home/remol/Projects/mcba_firmware/sourcecode/firmware/PIC18F2680_CAN/main.c
                    __init   0x000006    program     extern C:\MCC18\v3_39\src\traditional\stdclib\__init.c
-            __zero_memory   0x001d08    program     extern C:\MCC18\v3_39\src\traditional\proc\p18F2680.asm
-                _do_cinit   0x001bdc    program     extern C:\MCC18\v3_39\src\traditional\startup\c018i.c
+            __zero_memory   0x001cf4    program     extern C:\MCC18\v3_39\src\traditional\proc\p18F2680.asm
+                _do_cinit   0x001bc8    program     extern C:\MCC18\v3_39\src\traditional\startup\c018i.c
                    _entry   0x000000    program     extern C:\MCC18\v3_39\src\traditional\startup\c018i.c
-                 _startup   0x001d28    program     extern C:\MCC18\v3_39\src\traditional\startup\c018i.c
-             addMsg2Queue   0x0019d0    program     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/PIC18F2680_CAN/queue.c
-          autoTriggerTest   0x000b2e    program     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/PIC18F2680_CAN/main.c
-                compare_l   0x001d1e    program     static C:\MCC18\v3_39\src\traditional\proc\p18F2680.asm
-                copy_loop   0x001c4e    program     static                          
-            copy_one_byte   0x001c54    program     static                          
-                     done   0x001c78    program     static                          
-             done_copying   0x001c62    program     static                          
-             initMsgQueue   0x001912    program     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/PIC18F2680_CAN/queue.c
+                 _startup   0x001d14    program     extern C:\MCC18\v3_39\src\traditional\startup\c018i.c
+             addMsg2Queue   0x0019bc    program     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/PIC18F2680_CAN/queue.c
+          autoTriggerTest   0x000b2c    program     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/PIC18F2680_CAN/main.c
+                compare_l   0x001d0a    program     static C:\MCC18\v3_39\src\traditional\proc\p18F2680.asm
+                copy_loop   0x001c3a    program     static                          
+            copy_one_byte   0x001c40    program     static                          
+                     done   0x001c64    program     static                          
+             done_copying   0x001c4e    program     static                          
+             initMsgQueue   0x0018fe    program     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/PIC18F2680_CAN/queue.c
  interrupt_at_high_vector   0x000008    program     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/PIC18F2680_CAN/main.c
   interrupt_at_low_vector   0x000018    program     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/PIC18F2680_CAN/main.c
-                     loop   0x001d38    program     static                          
-                   loop_h   0x001d16    program     static C:\MCC18\v3_39\src\traditional\proc\p18F2680.asm
-                   loop_l   0x001d20    program     static C:\MCC18\v3_39\src\traditional\proc\p18F2680.asm
+                     loop   0x001d24    program     static                          
+                   loop_h   0x001d02    program     static C:\MCC18\v3_39\src\traditional\proc\p18F2680.asm
+                   loop_l   0x001d0c    program     static C:\MCC18\v3_39\src\traditional\proc\p18F2680.asm
                      main   0x0002ce    program     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/PIC18F2680_CAN/main.c
-               readEEPROM   0x000b02    program     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/PIC18F2680_CAN/main.c
-       removeMsgfromQueue   0x001ad6    program     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/PIC18F2680_CAN/queue.c
-                     test   0x001bf6    program     static                          
-              writeEEPROM   0x000aaa    program     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/PIC18F2680_CAN/main.c
-               zero_block   0x001d16    program     static C:\MCC18\v3_39\src\traditional\proc\p18F2680.asm
+               readEEPROM   0x000b00    program     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/PIC18F2680_CAN/main.c
+       removeMsgfromQueue   0x001ac2    program     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/PIC18F2680_CAN/queue.c
+                     test   0x001be2    program     static                          
+              writeEEPROM   0x000aa8    program     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/PIC18F2680_CAN/main.c
+               zero_block   0x001d02    program     static C:\MCC18\v3_39\src\traditional\proc\p18F2680.asm
                    ADCON0   0x000fc2       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2680.asm
                ADCON0bits   0x000fc2       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2680.asm
                    ADCON1   0x000fc1       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F2680.asm
@@ -1067,57 +1067,57 @@ NeedToSendAliveMessageBool   0x000843       data     extern /home/remol/Projects
                  High_ISR   0x000052    program     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/PIC18F2680_CAN/main.c
                      main   0x0002ce    program     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/PIC18F2680_CAN/main.c
    PrepareIAmAliveMessage   0x000656    program     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/PIC18F2680_CAN/main.c
-         InitializeTimer0   0x000706    program     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/PIC18F2680_CAN/main.c
-            InitializeCCP   0x000714    program     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/PIC18F2680_CAN/main.c
-            InitializeSPI   0x00072a    program     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/PIC18F2680_CAN/main.c
-            InitializeCAN   0x000744    program     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/PIC18F2680_CAN/main.c
-              writeEEPROM   0x000aaa    program     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/PIC18F2680_CAN/main.c
-        ___while_lbl00107   0x000ae8    program     static                          
-        ___while_lbl00108   0x000aec    program     static                          
-       ___return_lbl00106   0x000af8    program     static                          
-               readEEPROM   0x000b02    program     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/PIC18F2680_CAN/main.c
-       ___return_lbl00109   0x000b24    program     static                          
-          autoTriggerTest   0x000b2e    program     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/PIC18F2680_CAN/main.c
-       ___case_1_lbl00112   0x000b66    program     static                          
-           ___if_lbl00113   0x000b8a    program     static                          
-       ___case_2_lbl00114   0x000b8c    program     static                          
-           ___if_lbl00115   0x000bb4    program     static                          
-       ___case_3_lbl00116   0x000bb6    program     static                          
-           ___if_lbl00117   0x000bda    program     static                          
-       ___case_4_lbl00118   0x000bdc    program     static                          
-           ___if_lbl00119   0x000c06    program     static                          
-      ___default_lbl00120   0x000c08    program     static                          
-   ___switchexit_lbl00111   0x000c0e    program     static                          
-       ___return_lbl00110   0x000c1e    program     static                          
-          UpdateLEDToggle   0x000c32    program     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/PIC18F2680_CAN/main.c
-            UpdateCANMode   0x000d58    program     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/PIC18F2680_CAN/main.c
-         UpdateCANBitRate   0x000e06    program     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/PIC18F2680_CAN/main.c
-              TransmitTX0   0x0010be    program     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/PIC18F2680_CAN/main.c
-              TransmitTX1   0x0011e2    program     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/PIC18F2680_CAN/main.c
-              TransmitTX2   0x001306    program     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/PIC18F2680_CAN/main.c
-               PopCANFIFO   0x00142a    program     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/PIC18F2680_CAN/main.c
-   CheckForTXTrasnmitEcho   0x00168a    program     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/PIC18F2680_CAN/main.c
-             initMsgQueue   0x001912    program     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/PIC18F2680_CAN/queue.c
-             addMsg2Queue   0x0019d0    program     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/PIC18F2680_CAN/queue.c
-       removeMsgfromQueue   0x001ad6    program     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/PIC18F2680_CAN/queue.c
-                _do_cinit   0x001bdc    program     extern C:\MCC18\v3_39\src\traditional\startup\c018i.c
-                     test   0x001bf6    program     static                          
-                copy_loop   0x001c4e    program     static                          
-            copy_one_byte   0x001c54    program     static                          
-             done_copying   0x001c62    program     static                          
-                     done   0x001c78    program     static                          
-       ___return_lbl00002   0x001c78    program     static                          
-                  OpenSPI   0x001c7a    program     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/PIC18F2680_CAN/spi_open.c
-                 WriteSPI   0x001ce0    program     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/PIC18F2680_CAN/spi_writ.c
-            __zero_memory   0x001d08    program     extern C:\MCC18\v3_39\src\traditional\proc\p18F2680.asm
-               zero_block   0x001d16    program     static C:\MCC18\v3_39\src\traditional\proc\p18F2680.asm
-                   loop_h   0x001d16    program     static C:\MCC18\v3_39\src\traditional\proc\p18F2680.asm
-                compare_l   0x001d1e    program     static C:\MCC18\v3_39\src\traditional\proc\p18F2680.asm
-                   loop_l   0x001d20    program     static C:\MCC18\v3_39\src\traditional\proc\p18F2680.asm
-                 _startup   0x001d28    program     extern C:\MCC18\v3_39\src\traditional\startup\c018i.c
-                     loop   0x001d38    program     static                          
-       ___return_lbl00001   0x001d42    program     static                          
-                  ReadSPI   0x001d44    program     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/PIC18F2680_CAN/spi_read.c
+         InitializeTimer0   0x000704    program     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/PIC18F2680_CAN/main.c
+            InitializeCCP   0x000712    program     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/PIC18F2680_CAN/main.c
+            InitializeSPI   0x000728    program     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/PIC18F2680_CAN/main.c
+            InitializeCAN   0x000742    program     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/PIC18F2680_CAN/main.c
+              writeEEPROM   0x000aa8    program     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/PIC18F2680_CAN/main.c
+        ___while_lbl00107   0x000ae6    program     static                          
+        ___while_lbl00108   0x000aea    program     static                          
+       ___return_lbl00106   0x000af6    program     static                          
+               readEEPROM   0x000b00    program     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/PIC18F2680_CAN/main.c
+       ___return_lbl00109   0x000b22    program     static                          
+          autoTriggerTest   0x000b2c    program     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/PIC18F2680_CAN/main.c
+       ___case_1_lbl00112   0x000b64    program     static                          
+           ___if_lbl00113   0x000b88    program     static                          
+       ___case_2_lbl00114   0x000b8a    program     static                          
+           ___if_lbl00115   0x000bb2    program     static                          
+       ___case_3_lbl00116   0x000bb4    program     static                          
+           ___if_lbl00117   0x000bd8    program     static                          
+       ___case_4_lbl00118   0x000bda    program     static                          
+           ___if_lbl00119   0x000c04    program     static                          
+      ___default_lbl00120   0x000c06    program     static                          
+   ___switchexit_lbl00111   0x000c0c    program     static                          
+       ___return_lbl00110   0x000c1c    program     static                          
+          UpdateLEDToggle   0x000c30    program     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/PIC18F2680_CAN/main.c
+            UpdateCANMode   0x000d56    program     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/PIC18F2680_CAN/main.c
+         UpdateCANBitRate   0x000e04    program     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/PIC18F2680_CAN/main.c
+              TransmitTX0   0x0010bc    program     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/PIC18F2680_CAN/main.c
+              TransmitTX1   0x0011da    program     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/PIC18F2680_CAN/main.c
+              TransmitTX2   0x0012f8    program     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/PIC18F2680_CAN/main.c
+               PopCANFIFO   0x001416    program     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/PIC18F2680_CAN/main.c
+   CheckForTXTrasnmitEcho   0x001676    program     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/PIC18F2680_CAN/main.c
+             initMsgQueue   0x0018fe    program     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/PIC18F2680_CAN/queue.c
+             addMsg2Queue   0x0019bc    program     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/PIC18F2680_CAN/queue.c
+       removeMsgfromQueue   0x001ac2    program     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/PIC18F2680_CAN/queue.c
+                _do_cinit   0x001bc8    program     extern C:\MCC18\v3_39\src\traditional\startup\c018i.c
+                     test   0x001be2    program     static                          
+                copy_loop   0x001c3a    program     static                          
+            copy_one_byte   0x001c40    program     static                          
+             done_copying   0x001c4e    program     static                          
+                     done   0x001c64    program     static                          
+       ___return_lbl00002   0x001c64    program     static                          
+                  OpenSPI   0x001c66    program     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/PIC18F2680_CAN/spi_open.c
+                 WriteSPI   0x001ccc    program     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/PIC18F2680_CAN/spi_writ.c
+            __zero_memory   0x001cf4    program     extern C:\MCC18\v3_39\src\traditional\proc\p18F2680.asm
+               zero_block   0x001d02    program     static C:\MCC18\v3_39\src\traditional\proc\p18F2680.asm
+                   loop_h   0x001d02    program     static C:\MCC18\v3_39\src\traditional\proc\p18F2680.asm
+                compare_l   0x001d0a    program     static C:\MCC18\v3_39\src\traditional\proc\p18F2680.asm
+                   loop_l   0x001d0c    program     static C:\MCC18\v3_39\src\traditional\proc\p18F2680.asm
+                 _startup   0x001d14    program     extern C:\MCC18\v3_39\src\traditional\startup\c018i.c
+                     loop   0x001d24    program     static                          
+       ___return_lbl00001   0x001d2e    program     static                          
+                  ReadSPI   0x001d30    program     extern /home/remol/Projects/mcba_firmware/sourcecode/firmware/PIC18F2680_CAN/spi_read.c
                __config_0   0x300001    program     static /home/remol/Projects/mcba_firmware/sourcecode/firmware/PIC18F2680_CAN/main.c
                __config_1   0x300002    program     static /home/remol/Projects/mcba_firmware/sourcecode/firmware/PIC18F2680_CAN/main.c
                __config_2   0x300003    program     static /home/remol/Projects/mcba_firmware/sourcecode/firmware/PIC18F2680_CAN/main.c

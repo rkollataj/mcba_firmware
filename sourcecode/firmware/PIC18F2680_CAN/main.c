@@ -1691,15 +1691,7 @@ void TransmitTX0(void)
     TXB0D6 = *USBMessageReadPointer++;
     TXB0D7 = *USBMessageReadPointer++;       //D7
     
-	if (TXB0DLCbits.TXRTR == 1)
-	{
-//Sometimes data shifts from SPI
-	}
-	else
-	{
     TXB0CONbits.TXREQ = 1; //Set the buffer to transmit
-	}
-
     
     USBMessageReadPointer += 5u; //Just increment past 4 byte timestamp and 1 byte checksum for now.
 }
@@ -1731,14 +1723,7 @@ void TransmitTX1(void)
     TXB1D6 = *USBMessageReadPointer++;
     TXB1D7 = *USBMessageReadPointer++;       //D7
     
-	if (TXB1DLCbits.TXRTR == 1)
-	{
-//Sometimes data shifts from SPI
-	}
-	else
-	{
     TXB1CONbits.TXREQ = 1; //Set the buffer to transmit
-	}
     
     USBMessageReadPointer += 5u; //Just increment past 4 byte timestamp and 1 byte checksum for now.
 }
@@ -1769,14 +1754,7 @@ void TransmitTX2(void)
     TXB2D6 = *USBMessageReadPointer++;
     TXB2D7 = *USBMessageReadPointer++;       //D7
 
-	if (TXB2DLCbits.TXRTR == 1)
-	{
-//Sometimes data shifts from SPI
-	}
-	else
-	{
     TXB2CONbits.TXREQ = 1; //Set the buffer to transmit
-	}
     
     USBMessageReadPointer += 5u; //Just increment past 4 byte timestamp and 1 byte checksum for now.
 }
